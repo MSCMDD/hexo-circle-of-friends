@@ -1,6 +1,6 @@
 import json, requests 
 
-url = requests.get("https://你的Qexo链接/pub/friends/")  #获取友链
+url = requests.get("https://qexo.giize.com/pub/friends/")  #获取友链
 text = url.text   #解析json数据
 data = json.loads(text)     #获取data数据
 data2 = data['data'] #data2为进入json data类中
