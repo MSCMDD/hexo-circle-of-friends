@@ -53,6 +53,11 @@ jobs:
       run: |
         echo "BASE_PATH=$(pwd)" >> $GITHUB_ENV && echo "PYTHONPATH=$(pwd)" >> $GITHUB_ENV
 
+    - name: QexoToJson
+      working-directory: ./hexo_circle_of_friends
+      run: |
+        python QexoToJson.py
+
     - name: leancloud Update posts # leancloud
       if: ${{ env.STORAGE_TYPE == 'leancloud' }}
       env:
