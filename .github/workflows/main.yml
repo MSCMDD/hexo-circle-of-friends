@@ -58,6 +58,16 @@ jobs:
       run: |
         python QexoToJson.py
 
+    - name: Push New Friends Json # 推送新Json到仓库
+      uses: github-actions-x/commit@v2.9
+      with:
+        github-token: ${{ secrets.GITHUB_TOKEN }}
+        commit-message: "Update friends.json"
+        files: friends.json
+        rebase: 'true'
+        name: github-actions[bot]
+        email: github-actions@noreply.github.com
+
     - name: leancloud Update posts # leancloud
       if: ${{ env.STORAGE_TYPE == 'leancloud' }}
       env:
