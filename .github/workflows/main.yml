@@ -53,8 +53,8 @@ jobs:
       run: |
         echo "BASE_PATH=$(pwd)" >> $GITHUB_ENV && echo "PYTHONPATH=$(pwd)" >> $GITHUB_ENV
 
-    - name: QexoToJson
-      working-directory: ./hexo_circle_of_friends
+    - name: Qexo To Json
+      working-directory: ./
       run: |
         python QexoToJson.py
 
