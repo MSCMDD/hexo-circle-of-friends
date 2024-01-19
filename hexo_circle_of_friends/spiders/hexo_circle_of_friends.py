@@ -23,7 +23,7 @@ post_parsers = [
 ]
 # 默认feed后缀
 feed_suffix = [
-    "atom.xml", "feed/atom", "rss.xml", "rss2.xml", "feed", "index.xml"
+    "atom.xml", "atom", "feed/atom", "rss.xml", "rss2.xml", "feed", "index.xml"
 ]
 
 
