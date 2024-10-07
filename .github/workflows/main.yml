@@ -58,6 +58,7 @@ jobs:
       working-directory: ./
       run: |
         python QexoToJson.py
+        dir
 
     - name: Push New Friends Json # 推送新Json到仓库
       uses: github-actions-x/commit@v2.9
